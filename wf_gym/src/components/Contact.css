@@ -1,0 +1,118 @@
+.contact-section {
+    background-color: var(--color-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    background: var(--color-bg-dark);
+    border-radius: 12px;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+a.contact-item:hover {
+    transform: translateX(10px);
+    border-color: var(--color-primary);
+    background: var(--color-base);
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-base);
+    flex-shrink: 0;
+}
+
+.contact-icon.phone {
+    background: var(--color-primary);
+}
+
+.contact-icon.whatsapp {
+    background: #25d366;
+    color: white;
+}
+
+.contact-icon.location {
+    background: var(--color-secondary);
+    color: white;
+}
+
+.contact-text h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 0.25rem;
+}
+
+.contact-text p {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+}
+
+.contact-media {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.image-stack {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4/5;
+}
+
+.stack-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    z-index: 2;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.stack-decoration {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    border: 4px solid var(--color-primary);
+    border-radius: 16px;
+    z-index: 1;
+}
+
+@media (max-width: 900px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-media {
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+}

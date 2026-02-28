@@ -1,0 +1,131 @@
+.services-section {
+    background-color: var(--color-base);
+    position: relative;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.service-card {
+    background: var(--color-bg-dark);
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    border-bottom: 4px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-bottom-color: var(--color-primary);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: rgba(240, 209, 31, 0.1);
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    background: var(--color-primary);
+    color: var(--color-bg-dark);
+}
+
+.service-icon svg {
+    width: 30px;
+    height: 30px;
+}
+
+.service-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.service-desc {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+}
+
+/* Lady Coach Feature */
+.lady-coach-feature {
+    display: flex;
+    background: linear-gradient(135deg, var(--color-bg-dark), #1d1705);
+    border-radius: 16px;
+    overflow: hidden;
+    align-items: center;
+    box-shadow: 0 10px 40px rgba(240, 209, 31, 0.05);
+    border: 1px solid rgba(240, 209, 31, 0.1);
+}
+
+.lady-coach-content {
+    flex: 1;
+    padding: 3rem 4rem;
+}
+
+.lady-coach-content h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.lady-coach-content p {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+}
+
+.lady-coach-image {
+    flex: 1;
+    max-width: 500px;
+    height: 100%;
+}
+
+.lady-coach-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 300px;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .lady-coach-feature {
+        flex-direction: column;
+    }
+
+    .lady-coach-content {
+        padding: 2.5rem 2rem;
+    }
+
+    .lady-coach-image {
+        max-width: 100%;
+        width: 100%;
+    }
+}
