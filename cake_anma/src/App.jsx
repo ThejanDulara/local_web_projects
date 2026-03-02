@@ -34,8 +34,7 @@ export default function App() {
       {/* Navigation */}
       <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
         <a href="#home" className="nav-brand" onClick={closeMobileMenu}>
-          <img src="/logo.jpg" alt="Caked by Amna Logo" />
-          <span className="brand-text">Caked by Amna</span>
+          <span className="brand-text">Sweet Bliss Bakery</span>
         </a>
 
         <div className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
@@ -63,10 +62,10 @@ export default function App() {
             Handcrafted, fresh, and fully custom cakes made with incredible flavors, finest ingredients, and endless love in Colombo.
           </p>
           <div className="hero-buttons delay-300">
-            <a href="https://wa.me/" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/+94714861243" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
               <MessageCircle size={20} /> Order via WhatsApp
             </a>
-            <a href="tel:" className="btn btn-primary">
+            <a href="tel:+94714861243" className="btn btn-primary">
               <Phone size={20} /> Call to Order
             </a>
             <a href="#gallery" className="btn btn-secondary">
@@ -86,20 +85,20 @@ export default function App() {
       <section id="about" className="section reveal">
         <div className="about">
           <div className="about-content">
-            <h2 className="section-title" style={{ textAlign: 'left' }}>About Caked by Amna</h2>
+            <h2 className="section-title" style={{ textAlign: 'left' }}>About Sweet Bliss Bakery</h2>
             <p>
-              Scrumptious, fresh, homemade cakes using the finest ingredients to suit any and every sugar craving. Be Caked!
+              Scrumptious, fresh, homemade cakes using the finest ingredients to suit any and every sugar craving. Stay Sweet!
             </p>
             <p>
               We are a premium home-based cake studio dedicated to creating not just desserts, but edible centerpieces for your most cherished moments. Known for our custom designs, incredible flavors, and meticulous attention to detail, every order is crafted with passion and warmth.
             </p>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '2rem', color: 'var(--text-light)' }}>
               <MapPin size={24} color="var(--soft-gold)" />
-              <span>No 23, Murugan Place, Colombo 06, Colombo, Sri Lanka</span>
+              <span>123 Sweet Lane, Sample City, 00000</span>
             </div>
           </div>
           <div className="about-image">
-            <img src="/team.jpg" alt="Amna the Baker" />
+            <img src="/about_baker.png" alt="Sweet Bliss Bakery" />
           </div>
         </div>
       </section>
@@ -177,44 +176,17 @@ export default function App() {
         <p className="section-subtitle">Fully customized designs serving as memorable centerpieces for your special moments.</p>
 
         <div className="gallery-grid">
-          {/* Images from Spetial_events_with_cake */}
           <div className="gallery-item">
-            <img src="/Spetial_events_with_cake/465956020_18468759112021579_369687222918867022_n.jpg" alt="Special Event Cake" />
+            <img src="/event_cake_1.png" alt="Special Event Cake" />
           </div>
           <div className="gallery-item">
-            <img src="/Spetial_events_with_cake/488249125_9727156597322952_3729451943370424773_n.jpg" alt="Special Event Cake" />
+            <img src="/event_cake_2.png" alt="Special Event Cake" />
           </div>
           <div className="gallery-item">
-            <img src="/Spetial_events_with_cake/468822259_18473145799021579_4410623486133468912_n.jpg" alt="Special Event Cake" />
+            <img src="/event_cake_3.png" alt="Special Event Cake" />
           </div>
           <div className="gallery-item">
-            <img src="/Spetial_events_with_cake/468836641_18473146807021579_739029949156135291_n.jpg" alt="Special Event Cake" />
-          </div>
-
-          {/* Images from cake_designs */}
-          <div className="gallery-item">
-            <img src="/cake_designs/480686521_1041991394634122_6152422066859790996_n.jpg" alt="Custom Cake Design" />
-          </div>
-          <div className="gallery-item">
-            <img src="/cake_designs/569637042_18536392363021579_7728877064144661360_n.jpg" alt="Custom Cake Design" />
-          </div>
-          <div className="gallery-item">
-            <img src="/cake_designs/621244264_18554964205021579_8134448977071301708_n.jpg" alt="Custom Cake Design" />
-          </div>
-          <div className="gallery-item">
-            <img src="/cake_designs/487832070_1071589305007664_2971745924400697328_n.jpg" alt="Custom Cake Design" />
-          </div>
-          <div className="gallery-item">
-            <img src="/cake_designs/471164725_18477716692021579_1020080080957268209_n.jpg" alt="Custom Cake Design" />
-          </div>
-          <div className="gallery-item">
-            <img src="/cake_designs/480179945_1037413405091921_7424180063354261107_n.jpg" alt="Custom Cake Design" />
-          </div>
-          <div className="gallery-item">
-            <img src="/cake_designs/481081569_9553501808021766_2442367205174973877_n.jpg" alt="Custom Cake Design" />
-          </div>
-          <div className="gallery-item">
-            <img src="/cake_designs/482247419_18489786787021579_6828523468071405021_n.jpg" alt="Custom Cake Design" />
+            <img src="/event_cake_4.png" alt="Special Event Cake" />
           </div>
         </div>
       </section>
@@ -229,7 +201,7 @@ export default function App() {
             <div className="stars">
               {[1, 2, 3, 4, 5].map(i => <Star key={i} size={20} fill="currentColor" />)}
             </div>
-            <p className="testimonial-text">"Absolutely incredible taste! The custom design was exactly what we envisioned, but the flavor is what everyone kept talking about. Best cake in Colombo!"</p>
+            <p className="testimonial-text">"Absolutely incredible taste! The custom design was exactly what we envisioned, but the flavor is what everyone kept talking about. Best cake in town!"</p>
             <p className="testimonial-author">- Sarah F.</p>
           </div>
 
@@ -237,7 +209,7 @@ export default function App() {
             <div className="stars">
               {[1, 2, 3, 4, 5].map(i => <Star key={i} size={20} fill="currentColor" />)}
             </div>
-            <p className="testimonial-text">"Amna was so friendly and easy to communicate with. She worked perfectly within our budget to deliver a stunning masterpiece for our anniversary."</p>
+            <p className="testimonial-text">"The baker was so friendly and easy to communicate with. They worked perfectly within our budget to deliver a stunning masterpiece for our anniversary."</p>
             <p className="testimonial-author">- Michelle K.</p>
           </div>
 
@@ -245,7 +217,7 @@ export default function App() {
             <div className="stars">
               {[1, 2, 3, 4, 5].map(i => <Star key={i} size={20} fill="currentColor" />)}
             </div>
-            <p className="testimonial-text">"Consistently 5-star experiences every single time. Beautiful, elegant designs and perfectly moist cake. Highly recommend her Passionfruit cupcakes!"</p>
+            <p className="testimonial-text">"Consistently 5-star experiences every single time. Beautiful, elegant designs and perfectly moist cake. Highly recommend their Passionfruit cupcakes!"</p>
             <p className="testimonial-author">- Danushka R.</p>
           </div>
         </div>
@@ -260,13 +232,13 @@ export default function App() {
           </p>
 
           <div className="contact-buttons">
-            <a href="https://wa.me/" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/+94714861243" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
               <MessageCircle size={24} /> Order via WhatsApp
             </a>
-            <a href="tel:" className="btn btn-primary">
+            <a href="tel:+94714861243" className="btn btn-primary">
               <Phone size={24} /> Direct Call
             </a>
-            <a href="https://web.facebook.com/caked.sl/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+            <a href="https://web.facebook.com/profile.php?id=61552297634605" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
               <Facebook size={24} /> Message on Facebook
             </a>
           </div>
@@ -275,19 +247,17 @@ export default function App() {
 
       {/* Footer */}
       <footer className="footer">
-        <img src="/logo.jpg" alt="Caked Logo" className="footer-logo" />
-
         <div className="footer-social">
-          <a href="https://web.facebook.com/caked.sl/" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <a href="https://web.facebook.com/profile.php?id=61552297634605" target="_blank" rel="noopener noreferrer" className="social-icon">
             <Facebook size={20} />
           </a>
         </div>
 
-        <p>No 23, Murugan Place, Colombo 06, Colombo, Sri Lanka</p>
+        <p>123 Sweet Lane, Sample City, 00000</p>
 
         <p className="footer-text">Follow our Facebook page to view our latest cake designs, special orders, and updates.</p>
 
-        <p className="closing-line">Be Caked 💕</p>
+        <p className="closing-line">Stay Sweet 💕</p>
       </footer>
     </div>
   );
