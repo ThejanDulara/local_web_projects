@@ -2,19 +2,12 @@ import { useState, useEffect } from 'react';
 import './App.css';
 
 const galleryImages = [
-  "469753167_1103961134463347_1285024778842304751_n.jpg",
-  "469898645_1103960944463366_2548445245665667755_n.jpg",
-  "469909602_1103960964463364_3763195794201493847_n.jpg",
-  "481269238_1256930045865402_106393207030864687_n.jpg",
-  "482091455_1260328465525560_1795648590278680217_n.jpg",
-  "488508639_1286409956250744_2290712479653311672_n.jpg",
-  "488618082_1286409962917410_7999419375166007267_n.jpg",
-  "488646366_1286410272917379_1688513183469636663_n.jpg",
-  "490583024_1292985602259846_2196499085794385249_n.jpg",
-  "539967056_1418204736404598_2788351366813469830_n.jpg",
-  "540458555_3033146960200284_4147835127852504835_n.jpg",
-  "540847853_3033147053533608_2058994158260121676_n.jpg",
-  "638757943_1580454603512943_275135307959227449_n.jpg"
+  "client_transform_1.png",
+  "client_transform_2.png",
+  "client_transform_3.png",
+  "client_transform_4.png",
+  "client_transform_5.png",
+  "client_transform_6.png"
 ];
 
 const services = [
@@ -90,7 +83,7 @@ function App() {
       {/* Navbar */}
       <header className={`nav-header ${mobileMenuOpen ? 'mobile-open' : ''}`}>
         <div className="nav-container">
-          <div className="nav-logo">Salon Glimmer</div>
+          <div className="nav-logo">Lumina Beauty</div>
 
           <button className="mobile-menu-btn" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? <XIcon /> : <MenuIcon />}
@@ -104,7 +97,7 @@ function App() {
           </nav>
 
           <div className={`nav-social ${mobileMenuOpen ? 'active' : ''}`}>
-            <a href="https://web.facebook.com/J.H.Pabasara" target="_blank" rel="noreferrer" className="social-icon" aria-label="Facebook Page">
+            <a href="https://www.facebook.com/profile.php?id=61552297634605" target="_blank" rel="noreferrer" className="social-icon" aria-label="Facebook Page">
               <FacebookIcon />
             </a>
           </div>
@@ -118,19 +111,19 @@ function App() {
             <h1>Enhancing Your Beauty, <br /><span>One Look at a Time</span></h1>
             <p>Step into elegance and experience professional makeup artistry that boosts your confidence and highlights your natural grace.</p>
             <div className="hero-buttons">
-              <a href="https://wa.me/94742618111" className="btn btn-whatsapp" target="_blank" rel="noreferrer">
+              <a href="https://wa.me/94714861243" className="btn btn-whatsapp" target="_blank" rel="noreferrer">
                 <WhatsAppIcon /> Book via WhatsApp
               </a>
-              <a href="tel:+94742618111" className="btn btn-primary">
+              <a href="tel:+94714861243" className="btn btn-primary">
                 <PhoneIcon /> Call Now
               </a>
-              <a href="https://web.facebook.com/J.H.Pabasara" target="_blank" rel="noreferrer" className="btn btn-secondary">
+              <a href="https://www.facebook.com/profile.php?id=61552297634605" target="_blank" rel="noreferrer" className="btn btn-secondary">
                 <FacebookIcon /> Message on Facebook
               </a>
             </div>
           </div>
           <div className="hero-image-wrapper reveal-right delay-2">
-            <img src="/main_image.jpg" alt="Salon Glimmer Hero" />
+            <img src="/service_images/bridal.png" alt="Lumina Beauty Hero" />
           </div>
         </div>
       </section>
@@ -138,14 +131,14 @@ function App() {
       {/* About Section */}
       <section id="about" className="section about container">
         <div className="about-inner reveal">
-          <h2 className="section-title">Welcome to Salon Glimmer</h2>
+          <h2 className="section-title">Welcome to Lumina Beauty</h2>
           <p>We are a professional beauty and wellness center dedicated to providing personalized care and exquisite beauty treatments.</p>
           <p>Our goal is simple: to help you feel confident, radiant, and undeniably beautiful in your own skin. With expert techniques and a warm, reassuring environment, every visit is a step towards your most glowing self.</p>
 
           <div className="location-box reveal delay-2">
             <MapPinIcon />
             <h4>Our Location</h4>
-            <p>B4 / G4 Mihindusenpura, Dematagoda, Colombo 00900, Sri Lanka</p>
+            <p>128 Blossom Avenue, Colombo 00300, Sri Lanka</p>
           </div>
         </div>
       </section>
@@ -175,17 +168,17 @@ function App() {
       <section id="owner" className="section owner container">
         <div className="owner-content">
           <div className="owner-image reveal-left">
-            <img src="/owner.jpg" alt="Pabasara Keerthirathna" />
+            <img src="/owner_profile_new.png" alt="Amani Senanayake" />
           </div>
           <div className="owner-text reveal-right">
             <div className="owner-quote">
               "Beauty is not a size, it's an attitude."
             </div>
-            <h3 className="owner-name">Pabasara Keerthirathna</h3>
+            <h3 className="owner-name">Amani Senanayake</h3>
             <div className="owner-title">Make-up Artist & Founder</div>
-            <p>With an unwavering passion for artistry and a keen eye for elegance, Pabasara has spent years perfecting the craft of makeup and dressing.</p>
-            <p>She believes every client has a unique glow that deserves to be celebrated. Whether it’s for a grand wedding or a beautiful evening event, Pabasara ensures you step out looking flawless and feeling incredibly confident.</p>
-            <a href="https://web.facebook.com/sadu.pabasara.372" target="_blank" rel="noreferrer" className="btn btn-primary" style={{ marginTop: '1.5rem' }}>
+            <p>With an unwavering passion for artistry and a keen eye for elegance, Amani has spent years perfecting the craft of makeup and dressing.</p>
+            <p>She believes every client has a unique glow that deserves to be celebrated. Whether it’s for a grand wedding or a beautiful evening event, Amani ensures you step out looking flawless and feeling incredibly confident.</p>
+            <a href="https://www.facebook.com/profile.php?id=61552297634605" target="_blank" rel="noreferrer" className="btn btn-primary" style={{ marginTop: '1.5rem' }}>
               <FacebookIcon /> Follow on Facebook
             </a>
           </div>
@@ -203,7 +196,7 @@ function App() {
           <div className="masonry-grid">
             {galleryImages.map((imgName, index) => (
               <div key={index} className={`gallery-item reveal delay-${(index % 4) + 1}`}>
-                <img src={`/dressing_images/${imgName}`} loading="lazy" alt={`Salon Glimmer Client ${index + 1}`} />
+                <img src={`/dressing_images/${imgName}`} loading="lazy" alt={`Lumina Beauty Client ${index + 1}`} />
                 <div className="gallery-overlay">
                   <span style={{ color: 'white', fontFamily: 'var(--font-serif)', fontSize: '1.2rem', fontStyle: 'italic' }}>View Style</span>
                 </div>
@@ -218,7 +211,7 @@ function App() {
         <div className="container">
           <div className="cta-inner reveal">
             <h2 style={{ fontSize: '2.5rem', fontFamily: 'var(--font-serif)', marginBottom: '1rem' }}>Ready to Shine?</h2>
-            <p style={{ fontSize: '1.1rem', color: '#555' }}>Book your appointment today and let us bring out your inner glimmer. We recommend booking in advance, especially for bridal and pre-shoot dressing.</p>
+            <p style={{ fontSize: '1.1rem', color: '#555' }}>Book your appointment today and let us bring out your inner lumina. We recommend booking in advance, especially for bridal and pre-shoot dressing.</p>
 
             <div className="hours-wrap">
               <div className="hours-item">
@@ -238,19 +231,19 @@ function App() {
             </div>
 
             <div className="cta-buttons">
-              <a href="https://wa.me/94742618111" target="_blank" rel="noreferrer" className="btn btn-whatsapp">
+              <a href="https://wa.me/94714861243" target="_blank" rel="noreferrer" className="btn btn-whatsapp">
                 <WhatsAppIcon /> Book on WhatsApp
               </a>
-              <a href="tel:+94742618111" className="btn btn-primary">
+              <a href="tel:+94714861243" className="btn btn-primary">
                 <PhoneIcon /> Call Now
               </a>
-              <a href="https://web.facebook.com/J.H.Pabasara" target="_blank" rel="noreferrer" className="btn btn-secondary">
+              <a href="https://www.facebook.com/profile.php?id=61552297634605" target="_blank" rel="noreferrer" className="btn btn-secondary">
                 <FacebookIcon /> Message on Facebook
               </a>
             </div>
 
             <p style={{ marginTop: '2.5rem', fontSize: '0.95rem', color: '#777' }}>
-              <a href="tel:+94742618111" style={{ color: 'var(--color-primary)', fontWeight: '600' }}>074 261 8111</a> <br />
+              <a href="tel:+94714861243" style={{ color: 'var(--color-primary)', fontWeight: '600' }}>071 486 1243</a> <br />
               View our latest dressing styles and updates on Facebook!
             </p>
           </div>
@@ -260,22 +253,22 @@ function App() {
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <div className="footer-logo">Salon Glimmer</div>
+          <div className="footer-logo">Lumina Beauty</div>
           <div className="footer-quote">"Because you deserve to shine."</div>
 
           <div className="footer-contact">
-            <p>B4 / G4 Mihindusenpura, Dematagoda, Colombo 00900, Sri Lanka</p>
-            <p>074 261 8111</p>
+            <p>128 Blossom Avenue, Colombo 00300, Sri Lanka</p>
+            <p>071 486 1243</p>
           </div>
 
           <div className="footer-social">
-            <a href="https://web.facebook.com/J.H.Pabasara" target="_blank" rel="noreferrer" className="social-icon" aria-label="Salon Facebook">
+            <a href="https://www.facebook.com/profile.php?id=61552297634605" target="_blank" rel="noreferrer" className="social-icon" aria-label="Salon Facebook">
               <FacebookIcon />
             </a>
           </div>
 
           <div className="footer-bottom">
-            &copy; {new Date().getFullYear()} Salon Glimmer. All rights reserved. <br />
+            &copy; {new Date().getFullYear()} Lumina Beauty. All rights reserved. <br />
             Designed with elegance and care.
           </div>
         </div>
