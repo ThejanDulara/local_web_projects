@@ -7,14 +7,12 @@ const Gallery = () => {
     const [activeVideo, setActiveVideo] = useState(null);
 
     const mediaItems = [
-        { type: 'video', src: '/gym_vedios/Download (1).mp4', span: 'col-span-2 row-span-2' },
-        { type: 'image', src: '/gym_photos/472924271_576993271990937_8095735074140284732_n.jpg', span: 'col-span-1 row-span-1' },
-        { type: 'image', src: '/gym_photos/480609265_607489382274659_7877565446908135085_n.jpg', span: 'col-span-1 row-span-2' },
-        { type: 'video', src: '/gym_vedios/Download (2).mp4', span: 'col-span-1 row-span-1' },
-        { type: 'image', src: '/Head_coach_gym_mood.webp', span: 'col-span-2 row-span-2' },
-        { type: 'image', src: '/gym_photos/474707160_589088554114742_9117868328292351712_n.jpg', span: 'col-span-1 row-span-1' },
-        { type: 'video', src: '/gym_vedios/Download (4).mp4', span: 'col-span-1 row-span-1' },
-        { type: 'image', src: '/gym_photos/481442737_620029274354003_7455000975184623665_n.jpg', span: 'col-span-2 row-span-2' },
+        { type: 'image', src: '/new_photoes/multi_gym_banner.jpg', span: 'col-span-2 row-span-2' },
+        { type: 'image', src: '/new_photoes/Gym-Workout-Plans-for-Beginners-Upper-Body-Strength-scaled.jpg', span: 'col-span-1 row-span-1' },
+        { type: 'image', src: '/new_photoes/Man-training-in-one-of-the-body-building-gyms-1080x675.jpg', span: 'col-span-1 row-span-2' },
+        { type: 'image', src: '/new_photoes/istockphoto-2075354173-612x612.jpg', span: 'col-span-1 row-span-1' },
+        { type: 'image', src: '/new_photoes/strong-bodybuilder-doing-heavy-weight-exercise-back-machine-1.jpg', span: 'col-span-2 row-span-2' },
+        { type: 'image', src: '/new_photoes/GYM-INTERIORS-FEATURE-compressed.jpg', span: 'col-span-2 row-span-2' },
     ];
 
     return (
@@ -27,7 +25,7 @@ const Gallery = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
-                        The Winner <span>Experience</span>
+                        The PowerHouse <span>Experience</span>
                     </motion.h2>
                     <motion.p
                         className="section-subtitle mx-auto"
@@ -35,7 +33,7 @@ const Gallery = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, delay: 0.2 }}
                     >
-                        Inside our walls, it's about pushing limits. Take a look at the energy, people, and community that make up Winner Fitness.
+                        Inside our walls, it's about pushing limits. Take a look at the energy, people, and community that make up PowerHouse Gym.
                     </motion.p>
                 </div>
 

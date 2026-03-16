@@ -17,8 +17,8 @@ const About = () => {
                     transition={{ duration: 0.8 }}
                 >
                     <img
-                        src="/gym_inside.webp"
-                        alt="Winner Fitness Interior"
+                        src="/new_photoes/GYM-INTERIORS-FEATURE-compressed.jpg"
+                        alt="PowerHouse Gym Interior"
                         className="about-image"
                         loading="lazy"
                     />
@@ -34,10 +34,10 @@ const About = () => {
                     transition={{ duration: 0.8, delay: 0.2 }}
                 >
                     <h2 className="section-title">
-                        About <span>Winner</span> Fitness
+                        About <span>PowerHouse</span> Gym
                     </h2>
                     <p className="about-description">
-                        Step into a space engineered for your success. At Winner Fitness, we believe strongly in the power of discipline, motivation, and long-term health improvement. We aren't just a gym; we are your ultimate partner in crafting a stronger, healthier you.
+                        Step into a space engineered for your success. At PowerHouse Gym, we believe strongly in the power of discipline, motivation, and long-term health improvement. We aren't just a gym; we are your ultimate partner in crafting a stronger, healthier you.
                     </p>
 
                     <div className="about-features">
@@ -47,7 +47,7 @@ const About = () => {
                             </div>
                             <div className="feature-text">
                                 <h3>Prime Location</h3>
-                                <p>Located at 320/9/1 Deniya Junction, Piliyandala.</p>
+                                <p>Located at 123 Fitness Street, NY 10001.</p>
                             </div>
                         </div>
 

@@ -105,7 +105,7 @@ const Services = () => {
                         </p>
                     </div>
                     <div className="lady-coach-image">
-                        <img src="/lady_coach_gym_mood.webp" alt="Professional Lady Coach" loading="lazy" />
+                        <img src="/new_photoes/lady.jpg" alt="Professional Lady Coach" loading="lazy" />
                     </div>
                 </motion.div>
             </div>

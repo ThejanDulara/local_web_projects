@@ -8,17 +8,17 @@ const SocialProof = () => {
         {
             name: "Kasun P.",
             role: "Member since 2023",
-            text: "The best fitness center in Piliyandala, hands down. The equipment is top-notch, and the trainers actually care about your progress. Transformation is guaranteed if you put in the work."
+            text: "The best fitness center in NY, hands down. The equipment is top-notch, and the trainers actually care about your progress. Transformation is guaranteed if you put in the work."
         },
         {
             name: "Nadeesha M.",
             role: "Member since 2024",
-            text: "As a female, finding a gym where I feel completely comfortable was hard until I found Winner Fitness. The lady coach is amazing, and the environment is extremely supportive."
+            text: "As a female, finding a gym where I feel completely comfortable was hard until I found PowerHouse Gym. The lady coach is amazing, and the environment is extremely supportive."
         },
         {
             name: "Chamara D.",
             role: "Member since 2022",
-            text: "Winner Fitness changed my life. They don't just teach you how to lift; they teach you discipline. The mindset shift I experienced here translates into everything I do."
+            text: "PowerHouse Gym changed my life. They don't just teach you how to lift; they teach you discipline. The mindset shift I experienced here translates into everything I do."
         }
     ];
 
@@ -52,7 +52,7 @@ const SocialProof = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, delay: 0.2 }}
                     >
-                        Don't just take our word for it. Listen to the members who have transformed their lives, built relentless discipline, and continuously pursue greatness at Winner Fitness.
+                        Don't just take our word for it. Listen to the members who have transformed their lives, built relentless discipline, and continuously pursue greatness at PowerHouse Gym.
                     </motion.p>
                 </div>
 

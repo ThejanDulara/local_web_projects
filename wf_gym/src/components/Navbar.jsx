@@ -26,8 +26,7 @@ const Navbar = () => {
         <header className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
             <div className="container nav-container">
                 <a href="#home" className="logo-link">
-                    <img src="/logo.jpg" alt="Winner Fitness Logo" className="nav-logo" />
-                    <span className="logo-text">WINNER FITNESS</span>
+                    <span className="logo-text">POWERHOUSE GYM</span>
                 </a>
 
                 {/* Desktop Menu */}

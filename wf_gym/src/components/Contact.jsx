@@ -22,23 +22,23 @@ const Contact = () => {
                     </p>
 
                     <div className="contact-details">
-                        <a href="tel:+94770042579" className="contact-item">
+                        <a href="tel:+94714861243" className="contact-item">
                             <div className="contact-icon phone">
                                 <Phone size={24} />
                             </div>
                             <div className="contact-text">
                                 <h3>Call Us</h3>
-                                <p>077 004 2579</p>
+                                <p>+94 714861243</p>
                             </div>
                         </a>
 
-                        <a href="https://wa.me/94770042579" target="_blank" rel="noreferrer" className="contact-item">
+                        <a href="https://wa.me/94714861243" target="_blank" rel="noreferrer" className="contact-item">
                             <div className="contact-icon whatsapp">
                                 <MessageCircle size={24} />
                             </div>
                             <div className="contact-text">
                                 <h3>WhatsApp</h3>
-                                <p>077 004 2579</p>
+                                <p>+94 714861243</p>
                             </div>
                         </a>
 
@@ -48,13 +48,13 @@ const Contact = () => {
                             </div>
                             <div className="contact-text">
                                 <h3>Location</h3>
-                                <p>320/9/1 Deniya Junction, Piliyandala</p>
+                                <p>123 Fitness Street, NY 10001</p>
                             </div>
                         </div>
                     </div>
 
                     <a
-                        href="https://maps.google.com/?q=320/9/1+Deniya+Junction,+Piliyandala"
+                        href="https://maps.google.com/?q=123+Fitness+Street,+NY+10001"
                         target="_blank"
                         rel="noreferrer"
                         className="btn btn-primary"
@@ -72,8 +72,8 @@ const Contact = () => {
                 >
                     <div className="image-stack">
                         <img
-                            src="/head_coach_getting_aword.jpg"
-                            alt="Winner Fitness Achievement"
+                            src="/new_photoes/strong-bodybuilder-doing-heavy-weight-exercise-back-machine-1.jpg"
+                            alt="PowerHouse Gym Work"
                             className="stack-image img-top"
                             loading="lazy"
                         />

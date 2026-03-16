@@ -7,16 +7,11 @@ const Hero = () => {
     return (
         <section id="home" className="hero">
             <div className="hero-background">
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
+                <img
+                    alt="gym background"
                     className="hero-video"
-                    poster="/gym_inside.webp"
-                >
-                    <source src="/gym_vedios/Download.mp4" type="video/mp4" />
-                </video>
+                    src="/new_photoes/multi_gym_banner.jpg"
+                />
                 <div className="hero-overlay"></div>
             </div>
 
@@ -33,7 +28,7 @@ const Hero = () => {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
-                        Re-write your <br /> <span className="text-gradient">health story</span>
+                        Your transformation <br /> <span className="text-gradient">begins here </span>
                     </motion.h1>
 
                     <motion.p

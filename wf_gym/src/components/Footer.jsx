@@ -1,23 +1,7 @@
 import React from 'react';
-import { Instagram, Facebook, Phone, MapPin } from 'lucide-react';
+import { Facebook, Phone, MapPin } from 'lucide-react';
 import './Footer.css';
 
-// TikTok Icon Custom SVG
-const TikTokIcon = ({ size = 24 }) => (
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width={size}
-        height={size}
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-    >
-        <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5v3a8 8 0 0 1-5-1.5z"></path>
-    </svg>
-);
 
 const Footer = () => {
     return (
@@ -25,19 +9,12 @@ const Footer = () => {
             <div className="container footer-container">
                 <div className="footer-brand">
                     <div className="footer-logo-wrapper">
-                        <img src="/logo.jpg" alt="Winner Fitness Logo" className="footer-logo" />
-                        <span className="footer-logo-text">WINNER FITNESS</span>
+                        <span className="footer-logo-text">POWERHOUSE GYM</span>
                     </div>
-                    <p className="footer-tagline">Re-write your health story 💪</p>
+                    <p className="footer-tagline">Your transformation begins here 🔥</p>
                     <div className="footer-socials">
-                        <a href="https://www.instagram.com/winner.fitness" target="_blank" rel="noreferrer" className="social-icon">
-                            <Instagram size={20} />
-                        </a>
-                        <a href="https://web.facebook.com/winnerfitnesspiliyandala" target="_blank" rel="noreferrer" className="social-icon">
+                        <a href="https://www.facebook.com/profile.php?id=61552297634605" target="_blank" rel="noreferrer" className="social-icon">
                             <Facebook size={20} />
-                        </a>
-                        <a href="https://www.tiktok.com/@winnerfitness30" target="_blank" rel="noreferrer" className="social-icon">
-                            <TikTokIcon size={20} />
                         </a>
                     </div>
                 </div>
@@ -57,11 +34,11 @@ const Footer = () => {
                     <ul>
                         <li>
                             <MapPin size={18} />
-                            <span>320/9/1 Deniya Junction, <br />Piliyandala</span>
+                            <span>123 Fitness Street, <br />NY 10001</span>
                         </li>
                         <li>
                             <Phone size={18} />
-                            <span>077 004 2579</span>
+                            <span>+94 714861243</span>
                         </li>
                     </ul>
                 </div>
@@ -69,7 +46,7 @@ const Footer = () => {
 
             <div className="footer-bottom">
                 <div className="container">
-                    <p>&copy; {new Date().getFullYear()} Winner Fitness. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} PowerHouse Gym. All rights reserved.</p>
                 </div>
             </div>
         </footer>
