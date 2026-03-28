@@ -40,6 +40,15 @@ const MagneticButton = ({ children, className, href }) => {
       onMouseLeave={reset}
       animate={{ x: position.x, y: position.y }}
       transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}
+      onClick={(e) => {
+        if (href && href.startsWith('#')) {
+          e.preventDefault();
+          const target = document.getElementById(href.substring(1));
+          if (target) {
+            window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
+          }
+        }
+      }}
     >
       {children}
     </motion.a>
@@ -84,6 +93,19 @@ export default function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToSection = (e, id) => {
+    if (e) e.preventDefault();
+    setMobileMenuOpen(false);
+    
+    setTimeout(() => {
+      const element = document.getElementById(id);
+      if (element) {
+        window.scrollTo({ top: element.offsetTop - 80, behavior: 'smooth' });
+      }
+    }, 150); // Small delay to let the menu close animation start without canceling the mobile smooth scroll
+  };
+
+
   const WHATSAPP_NUMBER = "+94714861243";
   const EMAIL = "info@nexintegrate.com";
   const FACEBOOK_URL = "https://web.facebook.com/profile.php?id=61552297634605";
@@ -101,12 +123,12 @@ export default function App() {
       {/* Navigation */}
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container">
-          <a href="#" className="nav-logo">VELORA</a>
+          <a href="#" className="nav-logo" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>VELORA</a>
           <div className="nav-links">
-            <a href="#new-arrivals">New Arrivals</a>
-            <a href="#collections">Collections</a>
-            <a href="#why-us">Why Us</a>
-            <a href="#contact">Contact</a>
+            <a href="#new-arrivals" onClick={(e) => scrollToSection(e, 'new-arrivals')}>New Arrivals</a>
+            <a href="#collections" onClick={(e) => scrollToSection(e, 'collections')}>Collections</a>
+            <a href="#why-us" onClick={(e) => scrollToSection(e, 'why-us')}>Why Us</a>
+            <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')}>Contact</a>
           </div>
           <button className="mobile-menu-btn" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? <X /> : <Menu />}
@@ -123,10 +145,10 @@ export default function App() {
             style={{ position: 'fixed', top: scrolled ? '65px' : '75px', left: 0, width: '100%', background: '#fff', zIndex: 999, overflow: 'hidden', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }}
           >
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '2rem 0', gap: '1.5rem' }}>
-              <a href="#new-arrivals" onClick={() => setMobileMenuOpen(false)} style={{ textDecoration: 'none', color: '#111', fontWeight: 600 }}>New Arrivals</a>
-              <a href="#collections" onClick={() => setMobileMenuOpen(false)} style={{ textDecoration: 'none', color: '#111', fontWeight: 600 }}>Collections</a>
-              <a href="#why-us" onClick={() => setMobileMenuOpen(false)} style={{ textDecoration: 'none', color: '#111', fontWeight: 600 }}>Why Shop With Us</a>
-              <a href="#contact" onClick={() => setMobileMenuOpen(false)} style={{ textDecoration: 'none', color: '#111', fontWeight: 600 }}>Contact</a>
+              <a href="#new-arrivals" onClick={(e) => scrollToSection(e, 'new-arrivals')} style={{ textDecoration: 'none', color: '#111', fontWeight: 600 }}>New Arrivals</a>
+              <a href="#collections" onClick={(e) => scrollToSection(e, 'collections')} style={{ textDecoration: 'none', color: '#111', fontWeight: 600 }}>Collections</a>
+              <a href="#why-us" onClick={(e) => scrollToSection(e, 'why-us')} style={{ textDecoration: 'none', color: '#111', fontWeight: 600 }}>Why Shop With Us</a>
+              <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} style={{ textDecoration: 'none', color: '#111', fontWeight: 600 }}>Contact</a>
             </div>
           </motion.div>
         )}
@@ -226,7 +248,7 @@ export default function App() {
           <div className="collection-overlay"></div>
           <div className="collection-content">
             <h2 className="collection-title">Men's Edit</h2>
-            <button className="collection-btn">Explore Men's</button>
+            <button className="collection-btn" onClick={(e) => scrollToSection(e, 'collections')}>Explore Men's</button>
           </div>
         </RevealOnScroll>
         <RevealOnScroll className="collection-card" delay={0.2}>
@@ -234,7 +256,7 @@ export default function App() {
           <div className="collection-overlay"></div>
           <div className="collection-content">
             <h2 className="collection-title">Women's Edit</h2>
-            <button className="collection-btn">Explore Women's</button>
+            <button className="collection-btn" onClick={(e) => scrollToSection(e, 'collections')}>Explore Women's</button>
           </div>
         </RevealOnScroll>
       </section>
@@ -268,7 +290,7 @@ export default function App() {
           </div>
 
           <div className="text-center" style={{ marginTop: '3rem' }}>
-            <a href="#collections" className="btn btn-outline" style={{ borderBottom: '2px solid var(--color-black)', borderRadius: 0, padding: '0.5rem 1rem' }}>
+            <a href="#collections" onClick={(e) => scrollToSection(e, 'collections')} className="btn btn-outline" style={{ borderBottom: '2px solid var(--color-black)', borderRadius: 0, padding: '0.5rem 1rem' }}>
               View All Products <ArrowRight size={18} />
             </a>
           </div>
@@ -366,9 +388,9 @@ export default function App() {
             <RevealOnScroll delay={0.1} className="footer-links">
               <h4>Shop</h4>
               <ul>
-                <li><a href="#new-arrivals">New Arrivals</a></li>
-                <li><a href="#collections">Men's Collection</a></li>
-                <li><a href="#collections">Women's Collection</a></li>
+                <li><a href="#new-arrivals" onClick={(e) => scrollToSection(e, 'new-arrivals')}>New Arrivals</a></li>
+                <li><a href="#collections" onClick={(e) => scrollToSection(e, 'collections')}>Men's Collection</a></li>
+                <li><a href="#collections" onClick={(e) => scrollToSection(e, 'collections')}>Women's Collection</a></li>
                 <li><a href="#">Accessories</a></li>
               </ul>
             </RevealOnScroll>
@@ -376,8 +398,8 @@ export default function App() {
             <RevealOnScroll delay={0.2} className="footer-links">
               <h4>Company</h4>
               <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#why-us">Why Choose Us</a></li>
+                <li><a href="#" >About Us</a></li>
+                <li><a href="#why-us" onClick={(e) => scrollToSection(e, 'why-us')}>Why Choose Us</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms of Service</a></li>
               </ul>
