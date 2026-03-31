@@ -37,12 +37,11 @@ const Testimonials = () => {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               style={{
                 backgroundColor: 'var(--c-white)',
-                padding: '2.5rem',
                 borderRadius: '1.5rem',
                 position: 'relative',
                 boxShadow: 'var(--shadow-md)'
               }}
-              className="card-hover"
+              className="card-hover p-card"
             >
               <div style={{
                 position: 'absolute',

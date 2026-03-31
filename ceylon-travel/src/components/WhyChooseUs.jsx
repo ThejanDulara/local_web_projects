@@ -66,9 +66,8 @@ const WhyChooseUs = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="glass-dark"
+              className="glass-dark p-card"
               style={{
-                padding: '2.5rem 2rem',
                 borderRadius: '1.5rem',
                 display: 'flex',
                 flexDirection: 'column',

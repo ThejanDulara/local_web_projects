@@ -248,7 +248,7 @@ const Destinations = () => {
               </div>
 
               {/* Text Container */}
-              <div style={{ flex: '1 1 400px', padding: '2.5rem', overflowY: 'auto', maxHeight: '90vh' }}>
+              <div className="p-responsive" style={{ flex: '1 1 400px', overflowY: 'auto', maxHeight: '90vh' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', color: 'var(--c-orange)' }}>
                   <MapPin size={20} />
                   <span style={{ fontWeight: 600, fontSize: '0.95rem', letterSpacing: '1px', textTransform: 'uppercase' }}>Sri Lanka</span>

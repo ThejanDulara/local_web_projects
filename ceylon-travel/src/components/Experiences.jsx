@@ -39,14 +39,14 @@ const Experiences = () => {
           </p>
         </div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '6rem' }}>
+        <div className="gap-responsive-lg" style={{ display: 'flex', flexDirection: 'column' }}>
           {experiences.map((exp, i) => (
             <div 
               key={i} 
+              className="gap-responsive"
               style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-                gap: '4rem',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))',
                 alignItems: 'center',
                 direction: exp.reversed ? 'rtl' : 'ltr'
               }}

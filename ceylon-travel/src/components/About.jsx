@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section id="about" className="section" style={{ backgroundColor: 'var(--c-white)' }}>
       <div className="container">
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '4rem', alignItems: 'center' }}>
+        <div className="gap-responsive" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 350px), 1fr))', alignItems: 'center' }}>
           
           {/* Content */}
           <motion.div

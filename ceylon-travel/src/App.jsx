@@ -20,7 +20,7 @@ function App() {
       <Destinations />
       
       {/* Mini planner strip feature */}
-      <section style={{ backgroundColor: 'var(--c-orange)', padding: '3rem 0', color: 'var(--c-white)' }}>
+      <section className="section-sm" style={{ backgroundColor: 'var(--c-orange)', color: 'var(--c-white)' }}>
         <div className="container" style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', alignItems: 'center', justifyContent: 'space-between' }}>
           <div>
             <h3 style={{ color: 'var(--c-white)', margin: '0 0 0.5rem 0', fontSize: '1.8rem' }}>What kind of trip are you dreaming of?</h3>
@@ -40,7 +40,7 @@ function App() {
       <WhyChooseUs />
       
       {/* Featured seasonal banner */}
-      <section style={{ padding: '5rem 0', backgroundColor: 'var(--c-teal)', color: 'var(--c-white)', textAlign: 'center' }}>
+      <section className="section-md" style={{ backgroundColor: 'var(--c-teal)', color: 'var(--c-white)', textAlign: 'center' }}>
         <div className="container">
           <span style={{ textTransform: 'uppercase', letterSpacing: '2px', fontWeight: 600, fontSize: '0.9rem', color: 'var(--c-sand)' }}>Seasonal Highlight</span>
           <h2 style={{ color: 'var(--c-white)', fontSize: '2.5rem', margin: '1rem 0 2rem 0' }}>Best Time to Visit Sri Lanka</h2>

@@ -6,7 +6,7 @@ const Footer = () => {
     <footer style={{ backgroundColor: 'var(--c-blue)', color: 'var(--c-white)', paddingTop: '5rem', paddingBottom: '2rem' }}>
       <div className="container">
         
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '4rem', marginBottom: '4rem' }}>
+        <div className="gap-responsive" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 250px), 1fr))', marginBottom: '4rem' }}>
           
           {/* Brand */}
           <div>

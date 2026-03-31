@@ -64,11 +64,7 @@ const Tours = () => {
         </div>
 
         {/* Horizontal Scroll on Mobile, Grid on Desktop */}
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', 
-          gap: '2.5rem' 
-        }}>
+        <div className="grid-auto-fit">
           {tours.map((tour, i) => (
             <motion.div
               key={tour.id}
@@ -110,7 +106,7 @@ const Tours = () => {
               </div>
 
               {/* Card Content */}
-              <div style={{ padding: '2rem', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+              <div className="p-card" style={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
                 <div style={{ color: 'var(--c-teal)', fontWeight: '600', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
                   {tour.duration}
                 </div>

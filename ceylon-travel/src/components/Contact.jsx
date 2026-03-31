@@ -27,7 +27,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="section" style={{ backgroundColor: 'var(--c-ivory)' }}>
-      <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '4rem' }}>
+      <div className="container gap-responsive" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 350px), 1fr))' }}>
         
         {/* Contact Info / WhatsApp CTA */}
         <motion.div
@@ -45,7 +45,7 @@ const Contact = () => {
             Tell us about your dream trip, and our local experts will craft a personalized itinerary just for you.
           </p>
 
-          <div style={{ backgroundColor: 'var(--c-blue)', padding: '2.5rem', borderRadius: '1.5rem', color: 'var(--c-white)' }}>
+          <div className="p-card" style={{ backgroundColor: 'var(--c-blue)', borderRadius: '1.5rem', color: 'var(--c-white)' }}>
             <h3 style={{ color: 'var(--c-white)', marginBottom: '1rem', fontSize: '1.5rem' }}>Chat With Us Anywhere</h3>
             <p style={{ marginBottom: '2rem', color: 'rgba(255,255,255,0.8)' }}>
               Looking for a quick response? Message us directly on WhatsApp to start planning right away.
@@ -77,21 +77,22 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          style={{ backgroundColor: 'var(--c-white)', padding: '3rem 2.5rem', borderRadius: '1.5rem', boxShadow: 'var(--shadow-xl)' }}
+          className="p-responsive"
+          style={{ backgroundColor: 'var(--c-white)', borderRadius: '1.5rem', boxShadow: 'var(--shadow-xl)' }}
         >
           <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+            <div className="grid-2" style={{ gap: '1.5rem' }}>
               <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Full Name" required style={inputStyle} />
               <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email Address" required style={inputStyle} />
             </div>
             
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+            <div className="grid-2" style={{ gap: '1.5rem' }}>
               <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="Phone Number" required style={inputStyle} />
               <input type="text" name="dates" value={formData.dates} onChange={handleChange} placeholder="Travel Dates (e.g. Dec 2026)" style={inputStyle} />
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+            <div className="grid-2" style={{ gap: '1.5rem' }}>
               <input type="number" name="travelers" value={formData.travelers} onChange={handleChange} placeholder="No. of Travelers" min="1" disabled={false} style={inputStyle} />
               <select name="type" value={formData.type} onChange={handleChange} style={inputStyle}>
                 <option value="" disabled>Select Tour Type</option>

@@ -23,17 +23,8 @@ const Gallery = () => {
           </p>
         </div>
 
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
-          gridAutoRows: '250px',
-          gap: '1rem',
-          gridAutoFlow: 'dense'
-        }}>
+        <div className="gallery-grid">
           {images.map((img, i) => {
-            const rowSpan = img.size === 'large' ? 2 : 1;
-            const colSpan = img.size === 'large' ? 2 : 1;
-            
             return (
               <motion.div
                 key={i}
@@ -42,13 +33,11 @@ const Gallery = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: (i % 4) * 0.1 }}
                 style={{
-                  gridRowEnd: `span ${rowSpan}`,
-                  gridColumnEnd: `span ${colSpan}`,
                   borderRadius: '1rem',
                   overflow: 'hidden',
                   position: 'relative'
                 }}
-                className="card-hover"
+                className={`card-hover ${img.size === 'large' ? 'gallery-item-large' : ''}`}
               >
                 <img 
                   src={img.src} 
